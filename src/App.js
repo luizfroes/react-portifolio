@@ -1,15 +1,14 @@
-import { Banner } from "./components/Banner";
-import { NavBar } from "./components/NavBar";
-import { SwitchBtn } from "./components/Switch-btn";
+import React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import { Home } from "./components/Home";
 import "./style.css";
 
 export const App = (props) => {
   return (
-    <div className="app-container">
-      <SwitchBtn />
-      <NavBar />
-      <Banner />
-    </div>
+    <>
+      <CssBaseline />
+      <Home />
+    </>
   );
 };
 

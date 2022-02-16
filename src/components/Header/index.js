@@ -18,17 +18,6 @@ export const Header = () => {
         zIndex: 1,
       }}
     >
-      <Grid container justifyContent="center">
-        <Avatar
-          sx={{
-            width: theme.spacing(20),
-            height: theme.spacing(20),
-            margin: theme.spacing(1),
-          }}
-          src={avatar}
-          alt="Luiz Carlos Portrait"
-        />
-      </Grid>
       <Typography
         sx={{
           marginTop: "3rem",
@@ -36,8 +25,20 @@ export const Header = () => {
         variant="h4"
       >
         <Typed
+          style={{ color: "#ffffff" }}
+          strings={["Hi, I am"]}
+          typeSpeed={40}
+        />
+      </Typography>
+      <Typography
+        sx={{
+          marginTop: "1rem",
+        }}
+        variant="h2"
+      >
+        <Typed
           style={{ color: "#0466c8ff" }}
-          strings={["Hi, I am Luiz Froes"]}
+          strings={["Luiz Froes"]}
           typeSpeed={40}
         />
       </Typography>
@@ -49,7 +50,7 @@ export const Header = () => {
       >
         <Typed
           style={{ color: "#ffffff" }}
-          strings={["I am a Software Engineer", "And a Full Stack Developer"]}
+          strings={["A Software Engineer", "And a Full Stack Developer"]}
           typeSpeed={40}
           backSpeed={50}
           loop

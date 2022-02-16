@@ -11,3 +11,7 @@
   --roman-silver: #7d8597ff;
   --manatee: #979dacff;
 }
+
+body {
+  background-color: #001219 !important;
+}

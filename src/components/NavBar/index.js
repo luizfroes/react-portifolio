@@ -30,7 +30,6 @@ import portrait from "../../Portrait1.png";
 import { color, height } from "@mui/system";
 import { hover } from "@testing-library/user-event/dist/hover";
 
-//CSS Styles
 const theme = createTheme();
 
 const menuItems = [
@@ -69,7 +68,7 @@ export const NavBar = () => {
       sx={{
         width: 250,
         background: "#33415cff",
-        // border: "10px #7d8597ff",
+        border: "0.5px #979dacff solid",
         height: "100%",
       }}
       component="div"
@@ -85,8 +84,12 @@ export const NavBar = () => {
         src={portrait}
         alt="Luiz Froes portrait"
       />
-      <Divider />
-      <List style={{ margin: "3rem 0rem" }}>
+      <Divider
+        sx={{
+          border: "0.5px #979dacff solid",
+        }}
+      />
+      <List style={{ margin: "1rem 0rem" }}>
         {menuItems.map((listItem, key) => (
           <ListItem button key={key}>
             <ListItemIcon

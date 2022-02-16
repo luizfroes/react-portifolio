@@ -1,50 +1,13 @@
-.app-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  position: relative;
-  z-index: 1;
-}
-
-.nav-bar {
-  /* background: #191d2b; */
-  border-right: 1px solid #2e344e;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  transition: all 0.4s ease-out;
-  width: 300px;
-  z-index: 10;
-}
-
-.switch-btn {
-  align-items: center;
-  background: hsla(0, 0%, 100%, 0.5);
-  display: flex;
-  height: 40px;
-  left: auto;
-  padding: 0 10px;
-  position: fixed;
-  right: 0;
-  top: 60px;
-  z-index: 999;
-}
-
-.banner-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.75rem;
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  padding-right: 0.75rem;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  /* width: 100%; */
-}
-.banner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center !important;
+:root {
+  /* CSS HEX */
+  --true-blue: #0466c8ff;
+  --usafa-blue: #0353a4ff;
+  --dark-cornflower-blue: #023e7dff;
+  --oxford-blue: #002855ff;
+  --oxford-blue-2: #001845ff;
+  --oxford-blue-3: #001233ff;
+  --independence: #33415cff;
+  --black-coral: #5c677dff;
+  --roman-silver: #7d8597ff;
+  --manatee: #979dacff;
 }

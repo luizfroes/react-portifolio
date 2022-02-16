@@ -112,7 +112,7 @@ export const NavBar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#33415cff" }}>
+        <AppBar position="static" style={{ background: "#1b2841" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <ArrowBack style={{ color: "#ffffff" }} />

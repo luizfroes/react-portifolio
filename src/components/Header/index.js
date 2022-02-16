@@ -27,7 +27,7 @@ export const Header = () => {
         <Typed
           style={{ color: "#ffffff" }}
           strings={["Hi, I am"]}
-          typeSpeed={40}
+          typeSpeed={100}
         />
       </Typography>
       <Typography
@@ -39,7 +39,7 @@ export const Header = () => {
         <Typed
           style={{ color: "#0466c8ff" }}
           strings={["Luiz Froes"]}
-          typeSpeed={40}
+          typeSpeed={100}
         />
       </Typography>
       <Typography
@@ -51,8 +51,8 @@ export const Header = () => {
         <Typed
           style={{ color: "#ffffff" }}
           strings={["A Software Engineer", "And a Full Stack Developer"]}
-          typeSpeed={40}
-          backSpeed={50}
+          typeSpeed={100}
+          backSpeed={100}
           loop
         />
       </Typography>

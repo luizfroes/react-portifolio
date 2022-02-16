@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { createTheme } from "@mui/material/styles";
 import "../../style.css";
 import MobilRightMenuSlider from "@mui/material/Drawer";
 import {
@@ -15,6 +16,7 @@ import {
   Typography,
   Box,
   sliderClasses,
+  makeStyles,
 } from "@mui/material";
 import {
   ArrowBack,
@@ -27,6 +29,9 @@ import {
 import portrait from "../../Portrait1.png";
 import { color, height } from "@mui/system";
 import { hover } from "@testing-library/user-event/dist/hover";
+
+//CSS Styles
+const theme = createTheme();
 
 const menuItems = [
   {
@@ -74,19 +79,26 @@ export const NavBar = () => {
         sx={{
           display: "block",
           margin: "0.5rem auto",
+          width: theme.spacing(25),
+          height: theme.spacing(25),
         }}
         src={portrait}
         alt="Luiz Froes portrait"
       />
       <Divider />
-      <List>
+      <List style={{ margin: "3rem 0rem" }}>
         {menuItems.map((listItem, key) => (
           <ListItem button key={key}>
-            <ListItemIcon style={{ color: "#ffffff" }}>
+            <ListItemIcon
+              style={{
+                color: "#ffffff",
+                padding: "1rem",
+              }}
+            >
               {listItem.listIcon}
             </ListItemIcon>
             <ListItemText
-              style={{ color: "#ffffff" }}
+              style={{ color: "#ffffff", padding: "1rem" }}
               primary={listItem.listText}
             />
           </ListItem>

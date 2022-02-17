@@ -15,8 +15,7 @@ import {
   List,
   Typography,
   Box,
-  sliderClasses,
-  makeStyles,
+  Link,
 } from "@mui/material";
 import {
   ArrowBack,
@@ -27,43 +26,51 @@ import {
   Computer,
 } from "@mui/icons-material";
 import portrait from "../../Portrait1.png";
-import { color, height } from "@mui/system";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 const theme = createTheme();
 
 const menuItems = [
   {
+    id: "1",
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/",
   },
   {
+    id: "2",
     listIcon: <AssignmentInd />,
     listText: "About",
+    listPath: "/about",
   },
   {
+    id: "3",
     listIcon: <Computer />,
     listText: "Skills",
+    listPath: "/skills",
   },
   {
+    id: "4",
     listIcon: <Apps />,
     listText: "Portifolio",
+    listPath: "/portifolio",
   },
   {
+    id: "5",
     listIcon: <ContactMail />,
     listText: "Contact",
+    listPath: "/contact",
   },
 ];
 
 export const NavBar = () => {
-  const [state, setState] = useState({
+  const [sliderState, setSliderState] = useState({
     right: false,
   });
 
   const toggleSlider = (slider, open) => () => {
-    setState({ ...state, [slider]: open });
+    setSliderState({ ...sliderState, [slider]: open });
   };
-  const sideList = (slider) => (
+  const sideList = (sliderState) => (
     <Box
       sx={{
         width: 250,
@@ -88,11 +95,22 @@ export const NavBar = () => {
       <Divider />
       <List sx={{ margin: "2rem 0rem" }}>
         {menuItems.map((listItem, key) => (
-          <ListItem button key={key}>
+          <ListItem
+            button
+            key={listItem.id}
+            component={Link}
+            href={listItem.listPath}
+            sx={{
+              "&:hover": {
+                backgroundColor: "#0466c8ff",
+                border: "1px solid #ffffff",
+              },
+              padding: "0.8rem 1.5rem",
+            }}
+          >
             <ListItemIcon
               sx={{
                 color: "#ffffff",
-                padding: "1rem",
               }}
             >
               {listItem.listIcon}
@@ -100,7 +118,6 @@ export const NavBar = () => {
             <ListItemText
               sx={{
                 color: "#ffffff",
-                padding: "1rem",
               }}
               primary={listItem.listText}
             />
@@ -112,17 +129,25 @@ export const NavBar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#001219" }}>
+        <AppBar position="fixed" style={{ background: "#001219" }}>
           <Toolbar>
-            <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "#ffffff" }} />
+            <IconButton
+              onClick={toggleSlider("right", true)}
+              sx={{
+                "&:hover": {
+                  color: "#0466c8ff",
+                },
+                color: "#ffffff",
+              }}
+            >
+              <ArrowBack />
             </IconButton>
             <Typography variant="h5" style={{ color: "#ffffff" }}>
               Portifolio
             </Typography>
             <MobilRightMenuSlider
               anchor="right"
-              open={state.right}
+              open={sliderState.right}
               onClose={toggleSlider("right", false)}
             >
               {sideList("left")}
@@ -133,3 +158,5 @@ export const NavBar = () => {
     </>
   );
 };
+
+export default NavBar;

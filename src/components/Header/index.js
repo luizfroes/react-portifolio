@@ -1,20 +1,11 @@
 import React from "react";
 import Typed from "react-typed";
-import { createTheme } from "@mui/material/styles";
-import {
-  Typography,
-  Avatar,
-  Grid,
-  Box,
-  autocompleteClasses,
-} from "@mui/material";
-import { height } from "@mui/system";
-
-const theme = createTheme();
+import { Typography, Box } from "@mui/material";
 
 export const Header = () => {
   return (
     <Box
+      component="section"
       sx={{
         position: "absolute",
         top: "30%",
@@ -33,7 +24,7 @@ export const Header = () => {
         <Typed
           style={{ color: "#ffffff" }}
           strings={["Hi, I am"]}
-          typeSpeed={150}
+          typeSpeed={100}
         />
       </Typography>
       <Typography
@@ -45,7 +36,7 @@ export const Header = () => {
         <Typed
           style={{ color: "#0466c8ff", padding: "1rem" }}
           strings={["Luiz Froes"]}
-          typeSpeed={150}
+          typeSpeed={100}
         />
       </Typography>
       <Typography
@@ -57,7 +48,7 @@ export const Header = () => {
         <Typed
           style={{ color: "#ffffff" }}
           strings={["A Software Engineer", "And a Full Stack Developer"]}
-          typeSpeed={150}
+          typeSpeed={100}
           backSpeed={80}
           loop
         />
@@ -65,3 +56,5 @@ export const Header = () => {
     </Box>
   );
 };
+
+export default Header;

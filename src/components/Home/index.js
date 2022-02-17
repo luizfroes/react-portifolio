@@ -1,16 +1,12 @@
 import React from "react";
-import { createTheme } from "@mui/material/styles";
 import Particles from "react-tsparticles";
 import "../../style.css";
 import { Header } from "../Header";
 import { NavBar } from "../NavBar";
 
-const theme = createTheme();
-
 export const Home = () => {
   return (
     <>
-      <NavBar />
       <Header />
       <Particles
         id="tsparticles"
@@ -84,3 +80,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

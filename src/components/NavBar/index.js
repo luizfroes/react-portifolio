@@ -43,7 +43,7 @@ const menuItems = [
   },
   {
     listIcon: <Computer />,
-    listText: "Tech Specs",
+    listText: "Skills",
   },
   {
     listIcon: <Apps />,
@@ -67,9 +67,10 @@ export const NavBar = () => {
     <Box
       sx={{
         width: 250,
-        background: "#33415cff",
-        border: "0.5px #979dacff solid",
-        height: "100%",
+        background: "#001219",
+        // border: "0.5px solid rgb(151, 157, 172 0.8)",
+        minHeight: "100vh",
+        overflow: "auto",
       }}
       component="div"
       onClick={toggleSlider("right", false)}
@@ -77,23 +78,19 @@ export const NavBar = () => {
       <Avatar
         sx={{
           display: "block",
-          margin: "0.5rem auto",
+          margin: "2rem auto",
           width: theme.spacing(25),
           height: theme.spacing(25),
         }}
         src={portrait}
         alt="Luiz Froes portrait"
       />
-      <Divider
-        sx={{
-          border: "0.5px #979dacff solid",
-        }}
-      />
-      <List style={{ margin: "1rem 0rem" }}>
+      <Divider />
+      <List sx={{ margin: "2rem 0rem" }}>
         {menuItems.map((listItem, key) => (
           <ListItem button key={key}>
             <ListItemIcon
-              style={{
+              sx={{
                 color: "#ffffff",
                 padding: "1rem",
               }}
@@ -101,7 +98,10 @@ export const NavBar = () => {
               {listItem.listIcon}
             </ListItemIcon>
             <ListItemText
-              style={{ color: "#ffffff", padding: "1rem" }}
+              sx={{
+                color: "#ffffff",
+                padding: "1rem",
+              }}
               primary={listItem.listText}
             />
           </ListItem>
@@ -112,7 +112,7 @@ export const NavBar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#1b2841" }}>
+        <AppBar position="static" style={{ background: "#001219" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <ArrowBack style={{ color: "#ffffff" }} />

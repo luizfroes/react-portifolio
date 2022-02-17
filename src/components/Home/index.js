@@ -14,9 +14,10 @@ export const Home = () => {
       <Header />
       <Particles
         id="tsparticles"
+        height="100vh"
         options={{
           fullScreen: { enable: false },
-          fpsLimit: 60,
+          fpsLimit: 30,
           interactivity: {
             detect_on: "canvas",
             events: {
@@ -66,7 +67,7 @@ export const Home = () => {
             opacity: {
               anim: { enable: false, opacity_min: 0.1, speed: 1, sync: false },
               random: false,
-              value: 0.5,
+              value: 0.3,
             },
             shape: {
               type: "circle",

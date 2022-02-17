@@ -1,8 +1,14 @@
 import React from "react";
 import Typed from "react-typed";
 import { createTheme } from "@mui/material/styles";
-import { Typography, Avatar, Grid, Box } from "@mui/material";
-import avatar from "../../Portrait1-removebg.png";
+import {
+  Typography,
+  Avatar,
+  Grid,
+  Box,
+  autocompleteClasses,
+} from "@mui/material";
+import { height } from "@mui/system";
 
 const theme = createTheme();
 
@@ -11,8 +17,8 @@ export const Header = () => {
     <Box
       sx={{
         position: "absolute",
-        top: "20%",
-        left: "10%",
+        top: "30%",
+        left: "12%",
         transform: "translate (50%, -50%)",
         textAlign: "center",
         zIndex: 1,
@@ -27,7 +33,7 @@ export const Header = () => {
         <Typed
           style={{ color: "#ffffff" }}
           strings={["Hi, I am"]}
-          typeSpeed={100}
+          typeSpeed={150}
         />
       </Typography>
       <Typography
@@ -37,9 +43,9 @@ export const Header = () => {
         variant="h2"
       >
         <Typed
-          style={{ color: "#0466c8ff" }}
+          style={{ color: "#0466c8ff", padding: "1rem" }}
           strings={["Luiz Froes"]}
-          typeSpeed={100}
+          typeSpeed={150}
         />
       </Typography>
       <Typography
@@ -51,8 +57,8 @@ export const Header = () => {
         <Typed
           style={{ color: "#ffffff" }}
           strings={["A Software Engineer", "And a Full Stack Developer"]}
-          typeSpeed={100}
-          backSpeed={100}
+          typeSpeed={150}
+          backSpeed={80}
           loop
         />
       </Typography>

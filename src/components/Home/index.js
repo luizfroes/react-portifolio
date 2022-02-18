@@ -2,7 +2,6 @@ import React from "react";
 import Particles from "react-tsparticles";
 import "../../style.css";
 import { Header } from "../Header";
-import { NavBar } from "../NavBar";
 
 export const Home = () => {
   return (

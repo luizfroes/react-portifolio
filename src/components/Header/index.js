@@ -46,7 +46,7 @@ export const Header = () => {
         variant="h5"
       >
         <Typed
-          style={{ color: "#ffffff" }}
+          style={{ color: "#979dac" }}
           strings={["A Software Engineer", "And a Full Stack Developer"]}
           typeSpeed={100}
           backSpeed={80}

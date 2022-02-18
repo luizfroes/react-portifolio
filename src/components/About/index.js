@@ -1,16 +1,46 @@
 import React from "react";
-import { Avatar, Container, Grid, List, Typography } from "@mui/material";
+import {
+  Avatar,
+  Container,
+  Grid,
+  List,
+  Typography,
+  ListItem,
+  ListItemIcon,
+  Link,
+} from "@mui/material";
+import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import aboutPortrait from "../../about-picture.jpeg";
 
 export const About = () => {
+  const socialMediaIcons = [
+    {
+      id: "1",
+      listIcon: <Instagram />,
+      listUrl: "https://www.instagram.com/luizfroesgeo/",
+    },
+    {
+      id: "2",
+      listIcon: <GitHub />,
+      listUrl: "https://github.com/luizfroes",
+    },
+    {
+      id: "3",
+      listIcon: <LinkedIn />,
+      listUrl: "https://www.linkedin.com/in/luiz-froes",
+    },
+  ];
   return (
     <div>
       <Container
         component="section"
         sx={{
+          width: "fit-content",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-around",
+          flexWrap: "wrap",
+          margin: "0",
         }}
       >
         <Typography
@@ -29,15 +59,19 @@ export const About = () => {
           Me, My self and I
         </Typography>
         <Grid container="true">
-          <Grid mt={3} avatar xs={12} sm={6}>
+          <Grid mt={3} avatar lg={6} sm={12} md={12}>
             <Avatar
               variant="square"
               alt="Luiz Carlos Picture"
               src={aboutPortrait}
-              sx={{ padding: "1rem", width: "auto", height: "auto" }}
+              sx={{
+                padding: "1rem 1rem 1rem 0rem",
+                width: "100%",
+                height: "auto",
+              }}
             ></Avatar>
           </Grid>
-          <Grid mt={4} xs={12} sm={6}>
+          <Grid mt={4} lg={6} sm={12} md={12}>
             <Container disableGutters="true">
               <Typography
                 sx={{
@@ -97,10 +131,48 @@ export const About = () => {
                 not coding in front of a screen I will be playing my guitar or
                 probably travelling to somewhere with my family.
               </Typography>
+              <Container
+                component="div"
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <List
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                  }}
+                >
+                  {socialMediaIcons.map((listIcon, key) => (
+                    <ListItem
+                      component={Link}
+                      alignItems="center"
+                      href={listIcon.listUrl}
+                      sx={{
+                        width: "fit-content",
+                        paddingLeft: "3rem",
+                        paddingRight: "3rem",
+                      }}
+                    >
+                      <ListItemIcon
+                        sx={{
+                          color: "#979dac",
+                          "&:hover": {
+                            color: "#0466c8ff",
+                          },
+                        }}
+                      >
+                        {listIcon.listIcon}
+                      </ListItemIcon>
+                    </ListItem>
+                  ))}
+                </List>
+              </Container>
             </Container>
           </Grid>
         </Grid>
-        <List></List>
       </Container>
     </div>
   );

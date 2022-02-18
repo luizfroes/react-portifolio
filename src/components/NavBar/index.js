@@ -75,7 +75,6 @@ export const NavBar = () => {
       sx={{
         width: 250,
         background: "#001219",
-        // border: "0.5px solid rgb(151, 157, 172 0.8)",
         minHeight: "100vh",
         overflow: "auto",
       }}
@@ -116,8 +115,10 @@ export const NavBar = () => {
               {listItem.listIcon}
             </ListItemIcon>
             <ListItemText
+              disableTypography="true"
               sx={{
                 color: "#979dac",
+                fontFamily: "Bebas Neue, cursive",
               }}
               primary={listItem.listText}
             />
@@ -142,7 +143,13 @@ export const NavBar = () => {
             >
               <ArrowBack />
             </IconButton>
-            <Typography variant="h5" style={{ color: "#979dac" }}>
+            <Typography
+              variant="h5"
+              sx={{
+                fontFamily: "Bebas Neue, cursive",
+                color: "#979dac",
+              }}
+            >
               Portifolio
             </Typography>
             <MobilRightMenuSlider

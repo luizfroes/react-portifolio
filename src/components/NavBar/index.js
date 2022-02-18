@@ -103,21 +103,21 @@ export const NavBar = () => {
             sx={{
               "&:hover": {
                 backgroundColor: "#0466c8ff",
-                border: "1px solid #ffffff",
+                border: "1px solid #979dac",
               },
               padding: "0.8rem 1.5rem",
             }}
           >
             <ListItemIcon
               sx={{
-                color: "#ffffff",
+                color: "#979dac",
               }}
             >
               {listItem.listIcon}
             </ListItemIcon>
             <ListItemText
               sx={{
-                color: "#ffffff",
+                color: "#979dac",
               }}
               primary={listItem.listText}
             />
@@ -137,12 +137,12 @@ export const NavBar = () => {
                 "&:hover": {
                   color: "#0466c8ff",
                 },
-                color: "#ffffff",
+                color: "#979dac",
               }}
             >
               <ArrowBack />
             </IconButton>
-            <Typography variant="h5" style={{ color: "#ffffff" }}>
+            <Typography variant="h5" style={{ color: "#979dac" }}>
               Portifolio
             </Typography>
             <MobilRightMenuSlider

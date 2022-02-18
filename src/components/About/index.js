@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Container, Grid, Typography } from "@mui/material";
+import { Avatar, Container, Grid, List, Typography } from "@mui/material";
 import aboutPortrait from "../../about-picture.jpeg";
 
 export const About = () => {
@@ -100,6 +100,7 @@ export const About = () => {
             </Container>
           </Grid>
         </Grid>
+        <List></List>
       </Container>
     </div>
   );

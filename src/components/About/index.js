@@ -1,15 +1,16 @@
 import React from "react";
-import {
-  Avatar,
-  Container,
-  Grid,
-  List,
-  Typography,
-  ListItem,
-  ListItemIcon,
-  Link,
-} from "@mui/material";
-import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
+import Avatar from "@mui/material/Avatar";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import List from "@mui/material/List";
+import Typography from "@mui/material/Typography";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import Link from "@mui/material/Link";
+import GitHub from "@mui/icons-material/GitHub";
+import Instagram from "@mui/icons-material/Instagram";
+import LinkedIn from "@mui/icons-material/LinkedIn";
+
 import aboutPortrait from "../../about-picture.jpeg";
 
 export const About = () => {

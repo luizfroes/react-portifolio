@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
-import { Typography, Box } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
 export const Header = () => {
   return (

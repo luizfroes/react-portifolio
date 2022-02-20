@@ -3,28 +3,24 @@ import { useState } from "react";
 import { createTheme } from "@mui/material/styles";
 import "../../style.css";
 import MobilRightMenuSlider from "@mui/material/Drawer";
-import {
-  AppBar,
-  Toolbar,
-  ListItem,
-  IconButton,
-  ListItemText,
-  ListItemIcon,
-  Avatar,
-  Divider,
-  List,
-  Typography,
-  Box,
-  Link,
-} from "@mui/material";
-import {
-  ArrowBack,
-  AssignmentInd,
-  Home,
-  Apps,
-  ContactMail,
-  Computer,
-} from "@mui/icons-material";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import ListItem from "@mui/material/ListItem";
+import IconButton from "@mui/material/IconButton";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import Avatar from "@mui/material/Avatar";
+import Divider from "@mui/material/Divider";
+import List from "@mui/material/List";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import ArrowBack from "@mui/icons-material/ArrowBack";
+import AssignmentInd from "@mui/icons-material/AssignmentInd";
+import Home from "@mui/icons-material/Home";
+import Apps from "@mui/icons-material/Apps";
+import ContactMail from "@mui/icons-material/ContactMail";
+import Computer from "@mui/icons-material/Computer";
 import portrait from "../../Portrait1.png";
 
 const theme = createTheme();

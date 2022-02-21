@@ -32,16 +32,16 @@ export const About = () => {
     },
   ];
   return (
-    <div>
+    <>
       <Container
         component="section"
+        maxWidth="false"
         sx={{
-          width: "fit-content",
+          width: "auto",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-around",
           flexWrap: "wrap",
-          margin: "0",
         }}
       >
         <Typography
@@ -59,8 +59,8 @@ export const About = () => {
         >
           Me, My self and I
         </Typography>
-        <Grid container="true">
-          <Grid mt={3} avatar lg={6} sm={12} md={12}>
+        <Grid container="true" sx={{ flexWrap: "wrap" }}>
+          <Grid mt={3} sm={12} md={12} lg={6}>
             <Avatar
               variant="square"
               alt="Luiz Carlos Picture"
@@ -72,7 +72,7 @@ export const About = () => {
               }}
             ></Avatar>
           </Grid>
-          <Grid mt={4} lg={6} sm={12} md={12}>
+          <Grid mt={4} sm={12} md={12} lg={6}>
             <Container disableGutters="true">
               <Typography
                 sx={{
@@ -175,7 +175,7 @@ export const About = () => {
           </Grid>
         </Grid>
       </Container>
-    </div>
+    </>
   );
 };
 

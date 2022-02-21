@@ -8,14 +8,14 @@ import Portifolio from "./components/Portifolio";
 
 export const App = (props) => {
   return (
-    <div>
+    <>
       <NavBar />
       <Routes>
         <Route exact={true} path="/about" element={<About />}></Route>
         <Route exact={true} path="/portifolio" element={<Portifolio />}></Route>
         <Route exact={true} path="/" element={<Home />}></Route>
       </Routes>
-    </div>
+    </>
   );
 };
 

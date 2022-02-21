@@ -12,6 +12,7 @@ import Instagram from "@mui/icons-material/Instagram";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 
 import aboutPortrait from "../../about-picture.jpeg";
+import SectionTitle from "../SectionTitle";
 
 export const About = () => {
   const socialMediaIcons = [
@@ -44,21 +45,7 @@ export const About = () => {
           flexWrap: "wrap",
         }}
       >
-        <Typography
-          sx={{
-            width: "max-content",
-            fontFamily: "Bebas Neue, cursive",
-            marginTop: "5rem",
-            color: "#ffffff",
-            "&:hover": {
-              color: "#0466c8ff",
-            },
-          }}
-          variant="h3"
-          component="h1"
-        >
-          Me, My self and I
-        </Typography>
+        <SectionTitle title={"Me, My self and I"} />
         <Grid container="true" sx={{ flexWrap: "wrap" }}>
           <Grid mt={3} sm={12} md={12} lg={6}>
             <Avatar
@@ -70,7 +57,7 @@ export const About = () => {
                 width: "100%",
                 height: "auto",
               }}
-            ></Avatar>
+            />
           </Grid>
           <Grid mt={4} sm={12} md={12} lg={6}>
             <Container disableGutters="true">

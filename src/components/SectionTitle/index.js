@@ -1,6 +1,5 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
-import { PinDropSharp } from "@mui/icons-material";
 
 export const SectionTitle = (props) => {
   return (

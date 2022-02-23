@@ -7,20 +7,20 @@ import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
 import ListItemText from "@mui/material/ListItemText";
 import ListItem from "@mui/material/ListItem";
-import { Container } from "@mui/material";
+import Container from "@mui/material/Container";
 
 export const ProjectCard = () => {
   const StyledTypographyTitle = styled(Typography)(() => ({
     margin: "0 0 20px",
-    transform: "translateY(30px)",
+    overflow: "auto",
     opacity: "0",
-    transition: "all 0.3s ease-out",
+    transition: "all 0.3s",
   }));
 
   const StyledTypographyDesc = styled(Typography)(() => ({
-    transform: "translateY(30px)",
+    overflow: "auto",
     opacity: "0",
-    transition: "all 0.3s ease-out 0.2s",
+    transition: "all 0.3s",
   }));
 
   const StyledListItem = styled(ListItem)(() => ({
@@ -46,8 +46,8 @@ export const ProjectCard = () => {
     transition: "all 0.3s ease-out",
   }));
 
-  const StyledBox = styled(Box)(() => ({
-    width: "350px",
+  const StyledBox = styled(Box)((theme) => ({
+    width: "100%",
     height: "auto",
     position: "relative",
     overflow: "hidden",
@@ -60,11 +60,31 @@ export const ProjectCard = () => {
       },
       [`${StyledTypographyTitle}`]: {
         opacity: "1",
-        transform: "translateY(60px)",
+        position: "absolute",
+        top: "50%",
+        right: "50%",
+        "@media (max-width: 600px)": {
+          transform: "translate(50%,10%)",
+        },
+        transform: "translate(50%,30%)",
+        width: "100%",
       },
       [`${StyledTypographyDesc}`]: {
         opacity: "1",
-        transform: "translateY(60px)",
+        position: "absolute",
+        top: "50%",
+        right: "50%",
+        "@media (max-width: 400px)": {
+          transform: "translate(50%,35%)",
+        },
+        "@media (min-width: 600px)": {
+          transform: "translate(50%,100%)",
+        },
+        "@media (min-width: 800px)": {
+          transform: "translate(50%,100%)",
+        },
+        transform: "translate(50%,50%)",
+        width: "100%",
       },
     },
   }));
@@ -80,7 +100,7 @@ export const ProjectCard = () => {
   }));
   return (
     <>
-      <Container component="div" disableGutters="true" sx={{ width: "350px" }}>
+      <Container component="div" disableGutters="true" sx={{ width: "100%" }}>
         <StyledBox>
           <StyledAvatar
             variant="square"
@@ -88,10 +108,29 @@ export const ProjectCard = () => {
             src={projectImage1}
           ></StyledAvatar>
           <StyledBoxDesc>
-            <StyledTypographyTitle component="h5" variant="h5">
+            <StyledTypographyTitle
+              component="h5"
+              disableTypography="true"
+              sx={{
+                fontSize: "2rem",
+                "@media (min-width: 800px)": {
+                  fontSize: "3rem",
+                },
+              }}
+            >
               Mountain Morning
             </StyledTypographyTitle>
-            <StyledTypographyDesc component="p" variant="p">
+            <StyledTypographyDesc
+              component="p"
+              disableTypography="true"
+              sx={{
+                fontSize: "1rem",
+
+                "@media (min-width: 800px)": {
+                  fontSize: "1.5rem",
+                },
+              }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
               sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -99,34 +138,6 @@ export const ProjectCard = () => {
             </StyledTypographyDesc>
           </StyledBoxDesc>
         </StyledBox>
-        <List sx={{ display: "flex", justifyContent: "space-between" }}>
-          <StyledListItem>
-            <ListItemText
-              disableTypography="true"
-              sx={{
-                textAlign: "center",
-                color: "#979dac",
-                fontFamily: "Bebas Neue, cursive",
-                fontSize: "1rem",
-              }}
-            >
-              GitHub Repository
-            </ListItemText>
-          </StyledListItem>
-          <StyledListItem>
-            <ListItemText
-              disableTypography="true"
-              sx={{
-                textAlign: "center",
-                color: "#979dac",
-                fontFamily: "Bebas Neue, cursive",
-                fontSize: "1rem",
-              }}
-            >
-              Web Application
-            </ListItemText>
-          </StyledListItem>
-        </List>
       </Container>
     </>
   );

@@ -2,7 +2,6 @@ import { Typography } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { Box } from "@mui/system";
 import React from "react";
-import ProjectCard from "../ProjectCard";
 import ProjectsCarousel from "../ProjectsCarousel";
 import SectionTitle from "../SectionTitle";
 
@@ -19,20 +18,17 @@ export const Portifolio = () => {
         }}
       >
         <SectionTitle title="Portifolio" />
-        <Stack>
+        <Stack sx={{ width: "100%" }}>
           <Typography>Front End Projects</Typography>
-          <Box>
-            <ProjectCard />
-          </Box>
+
+          <ProjectsCarousel />
         </Stack>
-        <Stack>
+        <Stack sx={{ width: "100%" }}>
           <Typography>Back End Projects</Typography>
-          <Box>
-            <ProjectCard />
-          </Box>
+
+          <ProjectsCarousel />
         </Stack>
       </Stack>
-      <ProjectsCarousel></ProjectsCarousel>
     </>
   );
 };

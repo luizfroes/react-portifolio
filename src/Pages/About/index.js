@@ -12,7 +12,7 @@ import Instagram from "@mui/icons-material/Instagram";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 
 import aboutPortrait from "../../about-picture.jpeg";
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "../../components/SectionTitle";
 
 export const About = () => {
   const socialMediaIcons = [
@@ -36,30 +36,34 @@ export const About = () => {
     <>
       <Container
         component="section"
-        maxWidth="false"
+        disableGutters="true"
         sx={{
-          width: "auto",
+          width: "100%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-around",
           flexWrap: "wrap",
+          paddingLeft: "1rem",
         }}
       >
         <SectionTitle title={"Me, My self and I"} />
-        <Grid container="true" sx={{ flexWrap: "wrap" }}>
-          <Grid mt={3} sm={12} md={12} lg={6}>
+        <Grid container="true" wrap="wrap">
+          <Grid mt={3} xs={12} md={5} lg={6}>
             <Avatar
               variant="square"
               alt="Luiz Carlos Picture"
               src={aboutPortrait}
               sx={{
                 padding: "1rem 1rem 1rem 0rem",
+                "@media (max-width: 900px)": {
+                  padding: "1rem 0rem",
+                },
                 width: "100%",
                 height: "auto",
               }}
             />
           </Grid>
-          <Grid mt={4} sm={12} md={12} lg={6}>
+          <Grid mt={4} xs={12} md={7} lg={6}>
             <Container disableGutters="true">
               <Typography
                 sx={{

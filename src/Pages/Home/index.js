@@ -1,7 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import "../../style.css";
-import { Header } from "../Header";
+import { Header } from "../../components/Header";
 
 export const Home = () => {
   return (

@@ -3,11 +3,9 @@ import styled from "@emotion/styled/macro";
 import Box from "@mui/material/Box";
 import projectImage1 from "../../foodtopia.png";
 import Avatar from "@mui/material/Avatar";
-import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
-import ListItemText from "@mui/material/ListItemText";
-import ListItem from "@mui/material/ListItem";
 import Container from "@mui/material/Container";
+import { ProjectButtons } from "../ProjectsButtons";
 
 export const ProjectCard = () => {
   const StyledTypographyTitle = styled(Typography)(() => ({
@@ -23,25 +21,15 @@ export const ProjectCard = () => {
     transition: "all 0.3s",
   }));
 
-  const StyledListItem = styled(ListItem)(() => ({
-    width: "10.5rem",
-    backgroundColor: "#0466c8ff",
-    fontFamily: "Bebas Neue, cursive",
-    display: "inline-block",
-    padding: "0 0.3rem",
-    borderRadius: "5px",
-    textDecoration: "none",
-    cursor: "pointer",
-    transition: "all 0.3s ease-out 0.4s",
-    "&:hover": {
-      background: "#001845ff",
-    },
-  }));
-
   const StyledAvatar = styled(Avatar)(() => ({
     maxWidth: "100%",
     width: "auto",
-    height: "auto",
+    "@media (max-width: 600px)": {
+      height: "55vh",
+    },
+    "@media (min-width: 600px)": {
+      height: "60vh",
+    },
     transform: "scale(1.3)",
     transition: "all 0.3s ease-out",
   }));
@@ -75,7 +63,7 @@ export const ProjectCard = () => {
         top: "50%",
         right: "50%",
         "@media (max-width: 400px)": {
-          transform: "translate(50%,35%)",
+          transform: "translate(50%,100%)",
         },
         "@media (min-width: 600px)": {
           transform: "translate(50%,100%)",
@@ -138,6 +126,7 @@ export const ProjectCard = () => {
             </StyledTypographyDesc>
           </StyledBoxDesc>
         </StyledBox>
+        <ProjectButtons />
       </Container>
     </>
   );

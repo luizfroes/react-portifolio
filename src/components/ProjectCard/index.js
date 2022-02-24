@@ -1,25 +1,30 @@
 import React from "react";
 import styled from "@emotion/styled/macro";
 import Box from "@mui/material/Box";
-import projectImage1 from "../../foodtopia.png";
+import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { ProjectButtons } from "../ProjectsButtons";
 
-export const ProjectCard = () => {
-  const StyledTypographyTitle = styled(Typography)(() => ({
-    margin: "0 0 20px",
+export const ProjectCard = ({ project }) => {
+  const StyledStack = styled(Stack)(() => ({
     overflow: "auto",
     opacity: "0",
     transition: "all 0.3s",
   }));
+  // const StyledTypographyTitle = styled(Typography)(() => ({
+  //   margin: "0 0 20px",
+  //   overflow: "auto",
+  //   opacity: "0",
+  //   transition: "all 0.3s",
+  // }));
 
-  const StyledTypographyDesc = styled(Typography)(() => ({
-    overflow: "auto",
-    opacity: "0",
-    transition: "all 0.3s",
-  }));
+  // const StyledTypographyDesc = styled(Typography)(() => ({
+  //   overflow: "auto",
+  //   opacity: "0",
+  //   transition: "all 0.3s",
+  // }));
 
   const StyledAvatar = styled(Avatar)(() => ({
     maxWidth: "100%",
@@ -28,6 +33,9 @@ export const ProjectCard = () => {
       height: "55vh",
     },
     "@media (min-width: 600px)": {
+      height: "65vh",
+    },
+    "@media (min-width: 1200px)": {
       height: "60vh",
     },
     transform: "scale(1.3)",
@@ -46,34 +54,34 @@ export const ProjectCard = () => {
         transform: "scale(1.1) translateY(-20px)",
         opacity: "0.3",
       },
-      [`${StyledTypographyTitle}`]: {
+      [`${StyledStack}`]: {
         opacity: "1",
         position: "absolute",
         top: "50%",
         right: "50%",
         "@media (max-width: 600px)": {
-          transform: "translate(50%,10%)",
+          transform: "translate(50%,0%)",
         },
         transform: "translate(50%,30%)",
         width: "100%",
       },
-      [`${StyledTypographyDesc}`]: {
-        opacity: "1",
-        position: "absolute",
-        top: "50%",
-        right: "50%",
-        "@media (max-width: 400px)": {
-          transform: "translate(50%,100%)",
-        },
-        "@media (min-width: 600px)": {
-          transform: "translate(50%,100%)",
-        },
-        "@media (min-width: 800px)": {
-          transform: "translate(50%,100%)",
-        },
-        transform: "translate(50%,50%)",
-        width: "100%",
-      },
+      // [`${StyledTypographyDesc}`]: {
+      //   opacity: "1",
+      //   position: "absolute",
+      //   top: "50%",
+      //   right: "50%",
+      //   "@media (min-width: 400px)": {
+      //     transform: "translate(50%,50%)",
+      //   },
+      //   "@media (min-width: 600px)": {
+      //     transform: "translate(50%,100%)",
+      //   },
+      //   "@media (min-width: 800px)": {
+      //     transform: "translate(50%,100%)",
+      //   },
+      //   transform: "translate(50%,50%)",
+      //   width: "100%",
+      // },
     },
   }));
 
@@ -93,40 +101,39 @@ export const ProjectCard = () => {
           <StyledAvatar
             variant="square"
             alt="Luiz Carlos Picture"
-            src={projectImage1}
+            src={project.image}
           ></StyledAvatar>
           <StyledBoxDesc>
-            <StyledTypographyTitle
-              component="h5"
-              disableTypography="true"
-              sx={{
-                fontSize: "2rem",
-                "@media (min-width: 800px)": {
-                  fontSize: "3rem",
-                },
-              }}
-            >
-              Mountain Morning
-            </StyledTypographyTitle>
-            <StyledTypographyDesc
-              component="p"
-              disableTypography="true"
-              sx={{
-                fontSize: "1rem",
+            <StyledStack>
+              <Typography
+                component="h5"
+                disableTypography="true"
+                sx={{
+                  fontSize: "2rem",
+                  "@media (min-width: 700px)": {
+                    fontSize: "3rem",
+                  },
+                }}
+              >
+                {project.title}
+              </Typography>
+              <Typography
+                component="p"
+                disableTypography="true"
+                sx={{
+                  fontSize: "1rem",
 
-                "@media (min-width: 800px)": {
-                  fontSize: "1.5rem",
-                },
-              }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit, sed do eiusmod.
-            </StyledTypographyDesc>
+                  "@media (min-width: 700px)": {
+                    fontSize: "1.5rem",
+                  },
+                }}
+              >
+                {project.description}
+              </Typography>
+            </StyledStack>
           </StyledBoxDesc>
         </StyledBox>
-        <ProjectButtons />
+        <ProjectButtons webUrl={project.webUrl} gitHubUrl={project.gitHubUrl} />
       </Container>
     </>
   );

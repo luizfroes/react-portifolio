@@ -1,13 +1,13 @@
-import { Typography } from "@mui/material";
-import Stack from "@mui/material/Stack";
 import React from "react";
+import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
 import SectionTitle from "../../components/SectionTitle";
+import Box from "@mui/system/Box";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import Box from "@mui/system/Box";
 import { ProjectCard } from "../../components/ProjectCard";
+import { projects } from "../../data/projects";
 
-const items = [1, 2, 3, 4, 5, 6, 7, 8];
 export const Portifolio = () => {
   return (
     <>
@@ -25,8 +25,8 @@ export const Portifolio = () => {
           <Typography>Front End Projects</Typography>
           <Box component="div" sx={{ maxWidth: "100%", margin: "1rem" }}>
             <Carousel autoPlay infiniteLoop={true} showStatus={false}>
-              {items.map((item) => (
-                <ProjectCard />
+              {projects.frontEndProjects.map((project) => (
+                <ProjectCard project={project} key={project.id} />
               ))}
             </Carousel>
           </Box>
@@ -35,8 +35,18 @@ export const Portifolio = () => {
           <Typography>Back End Projects</Typography>
           <Box component="div" sx={{ maxWidth: "100%", margin: "1rem" }}>
             <Carousel autoPlay infiniteLoop={true} showStatus={false}>
-              {items.map((item) => (
-                <ProjectCard />
+              {projects.backEndProjects.map((project) => (
+                <ProjectCard project={project} key={project.id} />
+              ))}
+            </Carousel>
+          </Box>
+        </Stack>
+        <Stack sx={{ height: "80%", width: "100%" }}>
+          <Typography>Full Stack Projects</Typography>
+          <Box component="div" sx={{ maxWidth: "100%", margin: "1rem" }}>
+            <Carousel autoPlay infiniteLoop={true} showStatus={false}>
+              {projects.fullStackProjects.map((project) => (
+                <ProjectCard project={project} key={project.id} />
               ))}
             </Carousel>
           </Box>

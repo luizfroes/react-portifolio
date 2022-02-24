@@ -2,9 +2,10 @@ import React from "react";
 import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import ListItem from "@mui/material/ListItem";
+import Link from "@mui/material/Link";
 import styled from "@emotion/styled/macro";
 
-export const ProjectButtons = () => {
+export const ProjectButtons = ({ gitHubUrl, webUrl }) => {
   const StyledListItem = styled(ListItem)(() => ({
     width: "10.5rem",
     backgroundColor: "#0466c8ff",
@@ -32,6 +33,8 @@ export const ProjectButtons = () => {
       }}
     >
       <StyledListItem
+        component={Link}
+        href={gitHubUrl}
         sx={{
           "@media (max-width: 450px)": {
             marginBottom: "1rem",
@@ -56,6 +59,8 @@ export const ProjectButtons = () => {
         </ListItemText>
       </StyledListItem>
       <StyledListItem
+        component={Link}
+        href={webUrl}
         sx={{
           "@media (max-width: 450px)": {
             marginBottom: "1rem",

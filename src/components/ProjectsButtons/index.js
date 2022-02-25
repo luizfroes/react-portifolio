@@ -58,32 +58,34 @@ export const ProjectButtons = ({ gitHubUrl, webUrl }) => {
           GitHub Repository
         </ListItemText>
       </StyledListItem>
-      <StyledListItem
-        component={Link}
-        href={webUrl}
-        sx={{
-          "@media (max-width: 450px)": {
-            marginBottom: "1rem",
-            width: "100%",
-          },
-          "@media (min-width: 700px)": {
-            marginBottom: "1rem",
-            width: "35%",
-          },
-        }}
-      >
-        <ListItemText
-          disableTypography="true"
+      {webUrl && (
+        <StyledListItem
+          component={Link}
+          href={webUrl}
           sx={{
-            textAlign: "center",
-            color: "#979dac",
-            fontFamily: "Bebas Neue, cursive",
-            fontSize: "1rem",
+            "@media (max-width: 450px)": {
+              marginBottom: "1rem",
+              width: "100%",
+            },
+            "@media (min-width: 700px)": {
+              marginBottom: "1rem",
+              width: "35%",
+            },
           }}
         >
-          Web Application
-        </ListItemText>
-      </StyledListItem>
+          <ListItemText
+            disableTypography="true"
+            sx={{
+              textAlign: "center",
+              color: "#979dac",
+              fontFamily: "Bebas Neue, cursive",
+              fontSize: "1rem",
+            }}
+          >
+            Web Application
+          </ListItemText>
+        </StyledListItem>
+      )}
     </List>
   );
 };

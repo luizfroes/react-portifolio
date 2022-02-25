@@ -47,15 +47,6 @@ export const projects = {
       gitHubUrl: "https://github.com/luizfroes/weather-dashboard",
       webUrl: "https://luizfroes.github.io/weather-dashboard/",
     },
-    {
-      id: "6",
-      title: "Foodtopia",
-      description:
-        "Foodtopia is a responsive and dynamic recipe app, which assists users with advanced dietary needs. This app also provides an advanced mathematical calculator to present quantity of ingredients for catering services and to cater for larger parties.",
-      image: foodtopia,
-      gitHubUrl: "https://github.com/luizfroes/foodtopia-1",
-      webUrl: "https://luizfroes.github.io/foodtopia-1/",
-    },
   ],
   backEndProjects: [
     {
@@ -66,7 +57,6 @@ export const projects = {
       image: foodtopia,
       gitHubUrl:
         "https://github.com/luizfroes/NoSQL-Social-Network-API/tree/dev",
-      webUrl: "",
     },
     {
       id: "2",
@@ -84,7 +74,6 @@ export const projects = {
         "Internet retail, also known as e-commerce, is the largest sector of the electronics industry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. This application is the back end for an e-commerce site that has a Express.js sever and use Sequelize to interact with a MySQL database.",
       image: foodtopia,
       gitHubUrl: "https://github.com/luizfroes/ecomerce-backend/tree/dev",
-      webUrl: "",
     },
     {
       id: "4",
@@ -93,7 +82,6 @@ export const projects = {
         "Team Profile Generator is a Node.js command-line application that takes information about employees on a software engineering team, then generates a flat and responsive HTML webpage that displays summaries for each person. There's also some tests using Jest.js.",
       image: foodtopia,
       gitHubUrl: "https://github.com/luizfroes/team-profile-generator/tree/dev",
-      webUrl: "",
     },
     {
       id: "5",
@@ -102,7 +90,6 @@ export const projects = {
         "Readme Generator. An application that get user inputs and generate a professional README.md file. With Readme Generator you can quickly and easily create a README file by using a command-line application to generate one. Saving your time, you to devote more time to working on your projects.",
       image: foodtopia,
       gitHubUrl: "https://github.com/luizfroes/readme-generator/tree/dev",
-      webUrl: "",
     },
   ],
   fullStackProjects: [

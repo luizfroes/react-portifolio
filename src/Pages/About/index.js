@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
 import ListItem from "@mui/material/ListItem";
+import Divider from "@mui/material/Divider";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Link from "@mui/material/Link";
 import GitHub from "@mui/icons-material/GitHub";
@@ -43,10 +44,11 @@ export const About = () => {
           flexDirection: "column",
           justifyContent: "space-around",
           flexWrap: "wrap",
-          paddingLeft: "1rem",
+          padding: "0 1rem",
         }}
       >
         <SectionTitle title={"Me, My self and I"} />
+        <Divider sx={{ color: "#979dac", margin: "1rem 0 2rem" }} />
         <Grid container="true" wrap="wrap">
           <Grid mt={3} xs={12} md={5} lg={6}>
             <Avatar
@@ -56,14 +58,14 @@ export const About = () => {
               sx={{
                 padding: "1rem 1rem 1rem 0rem",
                 "@media (max-width: 900px)": {
-                  padding: "1rem 0rem",
+                  padding: "0",
                 },
                 width: "100%",
                 height: "auto",
               }}
             />
           </Grid>
-          <Grid mt={4} xs={12} md={7} lg={6}>
+          <Grid mt={4} xs={12} md={7} lg={6} sx={{}}>
             <Container disableGutters="true">
               <Typography
                 sx={{

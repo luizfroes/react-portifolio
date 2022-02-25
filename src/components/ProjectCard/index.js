@@ -12,31 +12,20 @@ export const ProjectCard = ({ project }) => {
     overflow: "auto",
     opacity: "0",
     transition: "all 0.3s",
+    padding: "0rem 1rem",
   }));
-  // const StyledTypographyTitle = styled(Typography)(() => ({
-  //   margin: "0 0 20px",
-  //   overflow: "auto",
-  //   opacity: "0",
-  //   transition: "all 0.3s",
-  // }));
-
-  // const StyledTypographyDesc = styled(Typography)(() => ({
-  //   overflow: "auto",
-  //   opacity: "0",
-  //   transition: "all 0.3s",
-  // }));
 
   const StyledAvatar = styled(Avatar)(() => ({
     maxWidth: "100%",
     width: "auto",
     "@media (max-width: 600px)": {
-      height: "55vh",
+      height: "40vh",
     },
     "@media (min-width: 600px)": {
-      height: "65vh",
+      height: "58vh",
     },
     "@media (min-width: 1200px)": {
-      height: "60vh",
+      height: "48vh",
     },
     transform: "scale(1.3)",
     transition: "all 0.3s ease-out",
@@ -60,28 +49,11 @@ export const ProjectCard = ({ project }) => {
         top: "50%",
         right: "50%",
         "@media (max-width: 600px)": {
-          transform: "translate(50%,0%)",
+          transform: "translate(50%,10%)",
         },
-        transform: "translate(50%,30%)",
+        transform: "translate(50%,40%)",
         width: "100%",
       },
-      // [`${StyledTypographyDesc}`]: {
-      //   opacity: "1",
-      //   position: "absolute",
-      //   top: "50%",
-      //   right: "50%",
-      //   "@media (min-width: 400px)": {
-      //     transform: "translate(50%,50%)",
-      //   },
-      //   "@media (min-width: 600px)": {
-      //     transform: "translate(50%,100%)",
-      //   },
-      //   "@media (min-width: 800px)": {
-      //     transform: "translate(50%,100%)",
-      //   },
-      //   transform: "translate(50%,50%)",
-      //   width: "100%",
-      // },
     },
   }));
 
@@ -109,6 +81,7 @@ export const ProjectCard = ({ project }) => {
                 component="h5"
                 disableTypography="true"
                 sx={{
+                  fontFamily: "Bebas Neue, cursive",
                   fontSize: "2rem",
                   "@media (min-width: 700px)": {
                     fontSize: "3rem",
@@ -122,7 +95,7 @@ export const ProjectCard = ({ project }) => {
                 disableTypography="true"
                 sx={{
                   fontSize: "1rem",
-
+                  fontFamily: "Bebas Neue, cursive",
                   "@media (min-width: 700px)": {
                     fontSize: "1.5rem",
                   },

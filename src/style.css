@@ -1,4 +1,5 @@
 :root {
+  min-width: 100%;
   /* CSS HEX */
   --true-blue: #0466c8ff;
   --usafa-blue: #0353a4ff;

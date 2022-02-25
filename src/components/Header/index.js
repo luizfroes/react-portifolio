@@ -9,18 +9,27 @@ export const Header = () => {
       component="section"
       sx={{
         position: "absolute",
-        top: "30%",
-        left: "12%",
+        top: "20%",
+        left: "15%",
         transform: "translate (50%, -50%)",
         textAlign: "center",
         zIndex: 1,
+        "@media (min-width: 700px)": {
+          left: "30%",
+        },
+        "@media (min-width: 1000px)": {
+          left: "35%",
+        },
       }}
     >
       <Typography
         sx={{
           marginTop: "3rem",
+          fontSize: "2rem",
+          "@media (min-width: 700px)": {
+            fontSize: "3rem",
+          },
         }}
-        variant="h4"
       >
         <Typed
           style={{ color: "#ffffff" }}
@@ -31,8 +40,11 @@ export const Header = () => {
       <Typography
         sx={{
           marginTop: "1rem",
+          fontSize: "3rem",
+          "@media (min-width: 700px)": {
+            fontSize: "4rem",
+          },
         }}
-        variant="h2"
       >
         <Typed
           style={{ color: "#0466c8ff", padding: "1rem" }}
@@ -43,12 +55,15 @@ export const Header = () => {
       <Typography
         sx={{
           margin: "1rem 0rem",
+          fontSize: "1rem",
+          "@media (min-width: 700px)": {
+            fontSize: "2rem",
+          },
         }}
-        variant="h5"
       >
         <Typed
           style={{ color: "#979dac" }}
-          strings={["A Software Engineer", "And a Full Stack Developer"]}
+          strings={["Software Engineer", "Full Stack Developer"]}
           typeSpeed={100}
           backSpeed={80}
           loop

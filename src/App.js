@@ -5,6 +5,7 @@ import { About } from "./Pages/About";
 import { Route, Routes } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import { Portifolio } from "./Pages/Portifolio";
+import { Skills } from "./Pages/Skills";
 
 export const App = (props) => {
   return (
@@ -12,6 +13,7 @@ export const App = (props) => {
       <NavBar />
       <Routes>
         <Route exact={true} path="/about" element={<About />}></Route>
+        <Route exact={true} path="/skills" element={<Skills />}></Route>
         <Route exact={true} path="/portifolio" element={<Portifolio />}></Route>
         <Route exact={true} path="/" element={<Home />}></Route>
       </Routes>

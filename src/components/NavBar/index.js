@@ -126,7 +126,7 @@ export const NavBar = () => {
   );
   return (
     <>
-      <Box component="nav" position="relative">
+      <Box component="nav">
         <AppBar
           position="fixed"
           sx={{ maxWidth: "100%", background: "#001219" }}

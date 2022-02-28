@@ -14,6 +14,7 @@ import LinkedIn from "@mui/icons-material/LinkedIn";
 
 import aboutPortrait from "../../about-picture.jpeg";
 import SectionTitle from "../../components/SectionTitle";
+import Box from "@mui/system/Box";
 
 export const About = () => {
   const socialMediaIcons = [
@@ -50,7 +51,7 @@ export const About = () => {
         <SectionTitle title={"Me, My self and I"} />
         <Divider sx={{ color: "#979dac", margin: "1rem 0 2rem" }} />
         <Grid container="true" wrap="wrap">
-          <Grid mt={3} xs={12} md={5} lg={6}>
+          <Grid item={true} mt={3} xs={12} md={5} lg={6}>
             <Avatar
               variant="square"
               alt="Luiz Carlos Picture"
@@ -65,8 +66,8 @@ export const About = () => {
               }}
             />
           </Grid>
-          <Grid mt={4} xs={12} md={7} lg={6} sx={{}}>
-            <Container disableGutters="true">
+          <Grid item={true} mt={4} xs={12} md={7} lg={6}>
+            <Box>
               <Typography
                 sx={{
                   fontFamily: "Bebas Neue, cursive",
@@ -76,7 +77,7 @@ export const About = () => {
                 }}
                 align="justify"
               >
-                Hi, I'm <span class="span-name">Luiz Froes</span>
+                Hi, I'm <span className="span-name">Luiz Froes</span>
               </Typography>
               <Typography
                 sx={{
@@ -141,6 +142,7 @@ export const About = () => {
                 >
                   {socialMediaIcons.map((listIcon, key) => (
                     <ListItem
+                      key={listIcon.id}
                       component={Link}
                       alignItems="center"
                       href={listIcon.listUrl}
@@ -164,7 +166,7 @@ export const About = () => {
                   ))}
                 </List>
               </Container>
-            </Container>
+            </Box>
           </Grid>
         </Grid>
       </Container>

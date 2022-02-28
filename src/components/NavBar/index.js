@@ -22,6 +22,7 @@ import Apps from "@mui/icons-material/Apps";
 import ContactMail from "@mui/icons-material/ContactMail";
 import Computer from "@mui/icons-material/Computer";
 import portrait from "../../Portrait1.png";
+import { NavbarFooter } from "../NavbarFooter";
 
 const theme = createTheme();
 
@@ -71,7 +72,7 @@ export const NavBar = () => {
       sx={{
         width: 250,
         background: "#001219",
-        minHeight: "100vh",
+        minHeight: "95vh",
         overflow: "auto",
       }}
       component="div"
@@ -111,7 +112,7 @@ export const NavBar = () => {
               {listItem.listIcon}
             </ListItemIcon>
             <ListItemText
-              disableTypography="true"
+              disableTypography={true}
               sx={{
                 color: "#979dac",
                 fontFamily: "Bebas Neue, cursive",
@@ -125,9 +126,12 @@ export const NavBar = () => {
   );
   return (
     <>
-      <Box component="nav">
-        <AppBar position="fixed" style={{ background: "#001219" }}>
-          <Toolbar>
+      <Box component="nav" position="relative">
+        <AppBar
+          position="fixed"
+          sx={{ maxWidth: "100%", background: "#001219" }}
+        >
+          <Toolbar sx={{ padding: "0", maxWidth: "max-content" }}>
             <IconButton
               onClick={toggleSlider("right", true)}
               sx={{
@@ -154,6 +158,7 @@ export const NavBar = () => {
               onClose={toggleSlider("right", false)}
             >
               {sideList("left")}
+              <NavbarFooter />
             </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>

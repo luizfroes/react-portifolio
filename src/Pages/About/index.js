@@ -1,4 +1,4 @@
-import React from "react";
+
 import Avatar from "@mui/material/Avatar";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";

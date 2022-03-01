@@ -17,23 +17,6 @@ import SectionTitle from "../../components/SectionTitle";
 import Box from "@mui/system/Box";
 
 export const About = () => {
-  const socialMediaIcons = [
-    {
-      id: "1",
-      listIcon: <Instagram />,
-      listUrl: "https://www.instagram.com/luizfroesgeo/",
-    },
-    {
-      id: "2",
-      listIcon: <GitHub />,
-      listUrl: "https://github.com/luizfroes",
-    },
-    {
-      id: "3",
-      listIcon: <LinkedIn />,
-      listUrl: "https://www.linkedin.com/in/luiz-froes",
-    },
-  ];
   return (
     <>
       <Container
@@ -126,46 +109,6 @@ export const About = () => {
                 not coding in front of a screen I will be playing my guitar or
                 probably travelling to somewhere with my family.
               </Typography>
-              <Container
-                component="div"
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <List
-                  sx={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                  }}
-                >
-                  {socialMediaIcons.map((listIcon, key) => (
-                    <ListItem
-                      key={listIcon.id}
-                      component={Link}
-                      alignItems="center"
-                      href={listIcon.listUrl}
-                      sx={{
-                        width: "fit-content",
-                        paddingLeft: "3rem",
-                        paddingRight: "3rem",
-                      }}
-                    >
-                      <ListItemIcon
-                        sx={{
-                          color: "#979dac",
-                          "&:hover": {
-                            color: "#0466c8ff",
-                          },
-                        }}
-                      >
-                        {listIcon.listIcon}
-                      </ListItemIcon>
-                    </ListItem>
-                  ))}
-                </List>
-              </Container>
             </Box>
           </Grid>
         </Grid>

@@ -47,6 +47,7 @@ export const Header = () => {
         }}
       >
         <Typed
+          startDelay={1500}
           style={{ color: "#0466c8ff", padding: "1rem" }}
           strings={["Luiz Froes"]}
           typeSpeed={100}
@@ -62,6 +63,7 @@ export const Header = () => {
         }}
       >
         <Typed
+          startDelay={3000}
           style={{ color: "#979dac" }}
           strings={["Software Engineer", "Full Stack Developer"]}
           typeSpeed={100}

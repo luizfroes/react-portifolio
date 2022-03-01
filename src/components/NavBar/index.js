@@ -14,6 +14,7 @@ import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import AssignmentInd from "@mui/icons-material/AssignmentInd";
@@ -68,7 +69,8 @@ export const NavBar = () => {
     setSliderState({ ...sliderState, [slider]: open });
   };
   const sideList = (sliderState) => (
-    <Box
+    <Stack
+      justifyContent="space-between"
       sx={{
         width: 250,
         background: "#001219",
@@ -88,8 +90,16 @@ export const NavBar = () => {
         src={portrait}
         alt="Luiz Froes portrait"
       />
-      <Divider />
-      <List sx={{ margin: "2rem 0rem" }}>
+      <Divider sx={{ color: "#979dac", margin: "1rem 0 2rem" }} />
+      <List
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          height: "100%",
+          margin: "2rem 0rem",
+        }}
+      >
         {menuItems.map((listItem, key) => (
           <ListItem
             button
@@ -122,7 +132,7 @@ export const NavBar = () => {
           </ListItem>
         ))}
       </List>
-    </Box>
+    </Stack>
   );
   return (
     <>

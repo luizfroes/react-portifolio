@@ -2,16 +2,8 @@ import React from "react";
 import Avatar from "@mui/material/Avatar";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
-import ListItem from "@mui/material/ListItem";
 import Divider from "@mui/material/Divider";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import Link from "@mui/material/Link";
-import GitHub from "@mui/icons-material/GitHub";
-import Instagram from "@mui/icons-material/Instagram";
-import LinkedIn from "@mui/icons-material/LinkedIn";
-
 import aboutPortrait from "../../about-picture.jpeg";
 import SectionTitle from "../../components/SectionTitle";
 import Box from "@mui/system/Box";

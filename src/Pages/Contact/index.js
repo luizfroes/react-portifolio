@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import SendIcon from "@mui/icons-material/Send";
 import Container from "@mui/material/Container";
 import SectionTitle from "../../components/SectionTitle";
+import Divider from "@mui/material/Divider";
 
 const InputField = withStyles({
   root: {
@@ -32,6 +33,7 @@ export const Contact = () => {
   return (
     <Container component="section">
       <SectionTitle title="Contact Me" />
+      <Divider sx={{ color: "#979dac", margin: "1rem 0 2rem" }} />
       <Box component="div">
         <Grid justifyContent="center">
           <Box component="form">

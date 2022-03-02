@@ -1,4 +1,3 @@
-
 import Avatar from "@mui/material/Avatar";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -12,6 +11,7 @@ export const About = () => {
   return (
     <>
       <Container
+        maxWidth={false}
         component="section"
         disableGutters="true"
         sx={{

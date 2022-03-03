@@ -115,7 +115,8 @@ export const ContactForm = () => {
           <InputField
             {...register("message", { required: true })}
             fullWidth={true}
-            multiline={true}
+            multiline
+            rows={10}
             id="message"
             name="message"
             label="Enter your message"

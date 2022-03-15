@@ -1,94 +1,34 @@
-import LinearProgress from "@mui/material/LinearProgress";
-import { useEffect } from "react";
-import {
-  FaHtml5,
-  FaCss3,
-  FaJsSquare,
-  FaReact,
-  FaNodeJs,
-  FaGithub,
-} from "react-icons/fa";
-import { GrMysql, GrGraphQl } from "react-icons/gr";
-import { SiMongodb, SiBootstrap } from "react-icons/si";
+import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
+import SectionTitle from "../../components/SectionTitle";
+import Stack from "@mui/material/Stack";
 
-const skills = [
-  {
-    id: "1",
-    icon: <FaHtml5 />,
-    skill: "HTML5",
-    percentage: "90%",
-  },
-  {
-    id: "2",
-    icon: <FaCss3 />,
-    skill: "CSS3",
-    percentage: "80%",
-  },
-  {
-    id: "3",
-    icon: <FaJsSquare />,
-    skill: "JAVASCRIPT",
-    percentage: "70%",
-  },
-  {
-    id: "4",
-    icon: <FaReact />,
-    skill: "REACT",
-    percentage: "80%",
-  },
-  {
-    id: "5",
-    icon: <FaNodeJs />,
-    skill: "NODE.JS",
-    percentage: "90%",
-  },
-  {
-    id: "5",
-    icon: <GrMysql />,
-    skill: "MySQL",
-    percentage: "90%",
-  },
-  {
-    id: "5",
-    icon: <SiMongodb />,
-    skill: "MongoDB",
-    percentage: "90%",
-  },
-  {
-    id: "5",
-    icon: <GrGraphQl />,
-    skill: "GraphQL",
-    percentage: "90%",
-  },
-  {
-    id: "5",
-    icon: <SiBootstrap />,
-    skill: "BootStrap",
-    percentage: "90%",
-  },
-  {
-    id: "5",
-    icon: <FaGithub />,
-    skill: "  GitHub",
-    percentage: "90%",
-  },
-];
+import { SkillsCard } from "../../components/SkillsCard";
+import { cardContent } from "../../data";
 
 export const Skills = () => {
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log("This will run every second!");
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
   return (
-    <LinearProgress
-      sx={{ mt: "5rem" }}
-      color="primary"
-      value={30}
-      valueBuffer={100}
-      variant="determinate"
-    />
+    <Container
+      maxWidth={false}
+      component="section"
+      disableGutters="true"
+      sx={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-around",
+        flexWrap: "wrap",
+        padding: "0 1rem",
+      }}
+    >
+      <SectionTitle title={"My Skills"} />
+      <Divider sx={{ color: "#979dac", margin: "1rem 0 2rem" }} />
+      <Stack flexDirection="row" flexWrap="wrap" justifyContent="space-around">
+        {cardContent.map((card, index) => (
+          <SkillsCard card={card} key={index} />
+        ))}
+      </Stack>
+    </Container>
   );
 };
 

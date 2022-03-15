@@ -1,3 +1,6 @@
+import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
+import LaptopWindowsSharpIcon from "@mui/icons-material/LaptopWindowsSharp";
+
 import foodtopia from "./images/foodtopia.png";
 
 export const projects = {
@@ -123,4 +126,23 @@ export const projects = {
   ],
 };
 
-export default projects;
+export const cardContent = [
+  {
+    title: "Frontend Developer",
+    description:
+      "I value business or brand for which I'm creating, thus I enjoy bringing new ideas to life.",
+    skills:
+      "HTML5, CSS3, JavaScript ES6+, JQuery, React, Apollo Client, Bootstrap.",
+    tools: "VScode, GitHub, Canvas, CodePen.",
+    icon: <PaletteSharpIcon fontSize="large" sx={{ mr: "1rem" }} />,
+  },
+  {
+    title: "Backend Developer",
+    description:
+      "I value creating, maintaining and testing technology at the back end of a website (the server, database and application).",
+    skills:
+      "NodeJs, JavaScript ES6+, JQuery, Express, MySQL, MongoDB, GraphQL, Axios, Apollo Server.",
+    tools: "VScode, GitHub, CodePen.",
+    icon: <LaptopWindowsSharpIcon fontSize="large" sx={{ mr: "1rem" }} />,
+  },
+];

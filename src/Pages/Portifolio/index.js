@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import SectionTitle from "../../components/SectionTitle";
@@ -7,11 +6,9 @@ import Divider from "@mui/material/Divider";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { ProjectCard } from "../../components/ProjectCard";
-import { projects } from "../../data/projects";
+import { projects } from "../../data/index";
 
 export const Portifolio = () => {
-  const [selectedProjects, setSelectedProjects] = useState();
-
   return (
     <>
       <Stack

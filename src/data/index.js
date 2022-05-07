@@ -1,7 +1,7 @@
 import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
 import LaptopWindowsSharpIcon from "@mui/icons-material/LaptopWindowsSharp";
 
-import foodtopia from "./images/foodtopia.png";
+import foodtopia from "../assets/img/foodtopia.png";
 
 export const projects = {
   frontEndProjects: [

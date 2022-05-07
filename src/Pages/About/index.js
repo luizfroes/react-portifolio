@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/system/Box";
 
-import aboutPortrait from "../../about-picture.jpeg";
+import aboutPortrait from "../../assets/img/about-picture.jpeg";
 import SectionTitle from "../../components/SectionTitle";
 
 export const About = () => {

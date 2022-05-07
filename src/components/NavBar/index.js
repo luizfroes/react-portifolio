@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { createTheme } from "@mui/material/styles";
 import "../../style.css";
@@ -22,7 +21,7 @@ import Home from "@mui/icons-material/Home";
 import Apps from "@mui/icons-material/Apps";
 import ContactMail from "@mui/icons-material/ContactMail";
 import Computer from "@mui/icons-material/Computer";
-import portrait from "../../Portrait1.png";
+import portrait from "../../assets/img/Portrait1.png";
 import { NavbarFooter } from "../NavbarFooter";
 
 const theme = createTheme();

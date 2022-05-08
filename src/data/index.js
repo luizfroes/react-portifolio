@@ -2,6 +2,15 @@ import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
 import LaptopWindowsSharpIcon from "@mui/icons-material/LaptopWindowsSharp";
 
 import foodtopia from "../assets/img/foodtopia.png";
+import getABook from "../assets/img/get-a-book.png";
+import password from "../assets/img/password-generator-screenshot.png";
+import quiz from "../assets/img/screenshot-quiz-main.png";
+import fitness from "../assets/img/fitness-app.png";
+import weather from "../assets/img/weather-dashboard-2.png";
+import noteTaker from "../assets/img/note-taker.png";
+import planner from "../assets/img/work-day-planer-webpage.png";
+import schoolify from "../assets/img/schoolify.png";
+import techBlog from "../assets/img/tech-blog-home.png";
 
 export const projects = {
   frontEndProjects: [
@@ -19,7 +28,7 @@ export const projects = {
       title: "Password Generator",
       description:
         "An application that enables employees to generate random passwords based on criteria that they’ve selected.",
-      image: foodtopia,
+      image: password,
       gitHubUrl: "https://github.com/luizfroes/foodtopia-1",
       webUrl: "https://luizfroes.github.io/foodtopia-1/",
     },
@@ -28,7 +37,7 @@ export const projects = {
       title: "Rock n' Roll Quiz",
       description:
         "This is a flat and responsive Rock n' Roll timed quiz. The page includes both multiple-choice questions and interactive Rock n' Roll challenges. Also presents a Highscore with all the players scores.",
-      image: foodtopia,
+      image: quiz,
       gitHubUrl: "https://github.com/luizfroes/timed-quiz-game",
       webUrl: "https://luizfroes.github.io/timed-quiz-game/",
     },
@@ -37,7 +46,7 @@ export const projects = {
       title: "Work Day Scheduler",
       description:
         "This is a flat and responsive calendar application that runs in the browser and allows the user to save events for each hour of the day.",
-      image: foodtopia,
+      image: planner,
       gitHubUrl: "https://github.com/luizfroes/work-day-scheduler",
       webUrl: "https://luizfroes.github.io/work-day-scheduler/",
     },
@@ -46,7 +55,7 @@ export const projects = {
       title: "Weather Dashboard",
       description:
         "This is a flat and responsive weather dashboard application that runs in the browser and allows the user to research the weather conditions for any city around the world, just typing the city name. It will presents the current weather condition and for the next 7 days.",
-      image: foodtopia,
+      image: weather,
       gitHubUrl: "https://github.com/luizfroes/weather-dashboard",
       webUrl: "https://luizfroes.github.io/weather-dashboard/",
     },
@@ -101,7 +110,7 @@ export const projects = {
       title: "The Tech Blog",
       description:
         "The Tech Blog is a fully responsive CMS-style blog site similar to a Wordpress site, where users can create, read, update and delete their posts and comment on other users posts as well. The app has an authentication system with protected routes that allows user access to certain functions and pages once authorized. Users are able to use the CRUD functionalities if they were the authors of the blog; however all other authorized users are able to comment on any blog.",
-      image: foodtopia,
+      image: techBlog,
       gitHubUrl: "https://github.com/luizfroes/tech-blog/tree/dev",
       webUrl: "https://agile-beyond-75908.herokuapp.com/",
     },
@@ -110,7 +119,7 @@ export const projects = {
       title: "The Fitness App",
       description:
         "The Fitness App is a fully responsive and dynamic app, where users can create, read, update and delete their exercises routines. The app has an authentication system with protected routes that allows user access to certain functions and pages once authorized.Users are able to use the CRUD functionalities if they were the authors of the routine; however all other users are able to see and be inspired by any routine.",
-      image: foodtopia,
+      image: fitness,
       gitHubUrl: "https://github.com/luizfroes/fitness-app/tree/dev",
       webUrl: "https://fierce-lowlands-38129.herokuapp.com/",
     },
@@ -119,9 +128,27 @@ export const projects = {
       title: "The Note Taker",
       description:
         "The Note Taker is a application that that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.",
-      image: foodtopia,
+      image: noteTaker,
       gitHubUrl: "https://github.com/luizfroes/note-taker/tree/dev",
       webUrl: "https://intense-headland-42686.herokuapp.com/",
+    },
+    {
+      id: "4",
+      title: "Get a Book",
+      description:
+        "A book search application powered by the Google Books API. Users can search books and then save to and delete from their accounts. ",
+      image: getABook,
+      gitHubUrl: "https://github.com/luizfroes/get-a-book-fe",
+      webUrl: "https://desolate-gorge-76424.herokuapp.com/",
+    },
+    {
+      id: "5",
+      title: "Schoolify",
+      description:
+        "A responsive dynamic app which will run in the browser. Schoolify is an easy to use application, which holds a Mongo database, and manages relations between parents, students and teachers. ",
+      image: schoolify,
+      gitHubUrl: "https://github.com/luizfroes/schoolify-client",
+      webUrl: "https://schoolify2022.herokuapp.com/",
     },
   ],
 };

@@ -1,0 +1,22 @@
+:root {
+  min-width: 100%;
+  /* CSS HEX */
+  --true-blue: #0466c8ff;
+  --usafa-blue: #0353a4ff;
+  --dark-cornflower-blue: #023e7dff;
+  --oxford-blue: #002855ff;
+  --oxford-blue-2: #001845ff;
+  --oxford-blue-3: #001233ff;
+  --independence: #0d1627;
+  --black-coral: #5c677dff;
+  --roman-silver: #7d8597ff;
+  --manatee: #979dac;
+}
+
+body {
+  background-color: #001219 !important;
+}
+
+.span-name {
+  color: #0466c8ff;
+}

@@ -31,31 +31,31 @@ const menuItems = [
     id: "1",
     listIcon: <Home />,
     listText: "Home",
-    listPath: "/",
+    listPath: "/react-portifolio",
   },
   {
     id: "2",
     listIcon: <AssignmentInd />,
     listText: "About",
-    listPath: "/about",
+    listPath: "/react-portifolio/about",
   },
   {
     id: "3",
     listIcon: <Computer />,
     listText: "Skills",
-    listPath: "/skills",
+    listPath: "/react-portifolio/skills",
   },
   {
     id: "4",
     listIcon: <Apps />,
     listText: "Portifolio",
-    listPath: "/portifolio",
+    listPath: "/react-portifolio/portifolio",
   },
   {
     id: "5",
     listIcon: <ContactMail />,
     listText: "Contact",
-    listPath: "/contact",
+    listPath: "/react-portifolio/contact",
   },
 ];
 

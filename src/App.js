@@ -1,11 +1,11 @@
 import "./style.css";
-import { Home } from "./Pages/Home";
-import { About } from "./Pages/About";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 import { Route, Routes } from "react-router-dom";
-import { NavBar } from "./components/NavBar";
-import { Portifolio } from "./Pages/Portifolio";
-import { Skills } from "./Pages/Skills";
-import { Contact } from "./Pages/Contact";
+import NavBar from "./components/NavBar";
+import Portifolio from "./Pages/Portifolio";
+import Skills from "./Pages/Skills";
+import Contact from "./Pages/Contact";
 
 export const App = (props) => {
   return (

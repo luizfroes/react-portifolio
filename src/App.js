@@ -15,7 +15,7 @@ export const App = (props) => {
         <Route
           exact={true}
           path="/react-portifolio/about"
-          element={<About />}
+          element={About}
         ></Route>
         <Route
           exact={true}

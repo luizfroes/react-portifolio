@@ -31,13 +31,13 @@ const menuItems = [
     id: "1",
     listIcon: <Home />,
     listText: "Home",
-    listPath: "/react-portifolio",
+    listPath: "luizfroes.github.io/react-portifolio/",
   },
   {
     id: "2",
     listIcon: <AssignmentInd />,
     listText: "About",
-    listPath: "/react-portifolio/about",
+    listPath: "luizfroes.github.io/react-portifolio/about",
   },
   {
     id: "3",

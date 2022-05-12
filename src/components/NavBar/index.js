@@ -38,25 +38,25 @@ const menuItems = [
     id: "2",
     listIcon: <AssignmentInd />,
     listText: "About",
-    listPath: "/react-portifolio/about",
+    listPath: "/about",
   },
   {
     id: "3",
     listIcon: <Computer />,
     listText: "Skills",
-    listPath: "/react-portifolio/skills",
+    listPath: "/skills",
   },
   {
     id: "4",
     listIcon: <Apps />,
     listText: "Portifolio",
-    listPath: "/react-portifolio/portifolio",
+    listPath: "/portifolio",
   },
   {
     id: "5",
     listIcon: <ContactMail />,
     listText: "Contact",
-    listPath: "/react-portifolio/contact",
+    listPath: "/contact",
   },
 ];
 

@@ -65,7 +65,7 @@ export const ContactPage = () => {
           backgroundColor: "#0466c8ff",
           border: "1px solid #979dac",
           "&:hover": {
-            backgroundColor: "primary.main",
+            backgroundColor: "#001219",
           },
         }}
         target="_blank"
@@ -99,7 +99,7 @@ export const ContactPage = () => {
           backgroundColor: "#0466c8ff",
           border: "1px solid #979dac",
           "&:hover": {
-            backgroundColor: "primary.main",
+            backgroundColor: "#001219",
           },
         }}
         target="_blank"
@@ -133,7 +133,7 @@ export const ContactPage = () => {
           backgroundColor: "#0466c8ff",
           border: "1px solid #979dac",
           "&:hover": {
-            backgroundColor: "primary.main",
+            backgroundColor: "#001219",
           },
         }}
         target="_blank"

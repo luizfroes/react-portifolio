@@ -43,7 +43,7 @@ const menuItems = [
     id: "3",
     listIcon: <Computer />,
     listText: "Skills",
-    listPath: "/react-portifolio/skills",
+    listPath: "/react-portifolio",
   },
   {
     id: "4",

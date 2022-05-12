@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.a9f09c08.css",
-    "main.js": "./static/js/main.fc907d33.js",
-    "static/js/787.3cf146a8.chunk.js": "./static/js/787.3cf146a8.chunk.js",
-    "static/media/foodtopia.png": "./static/media/foodtopia.95992fa4614ad7dd5991.png",
-    "static/media/fitness-app.png": "./static/media/fitness-app.a422e367c7a0667518e9.png",
-    "static/media/tech-blog-home.png": "./static/media/tech-blog-home.526e3fe7bc1e6c13e796.png",
-    "static/media/screenshot-quiz-main.png": "./static/media/screenshot-quiz-main.020ebcd2c64dc66c94cb.png",
-    "static/media/Portrait1.png": "./static/media/Portrait1.e6c1f26ecee08242c2bc.png",
-    "static/media/schoolify.png": "./static/media/schoolify.8673b9ae9856ce68ee35.png",
-    "static/media/weather-dashboard-2.png": "./static/media/weather-dashboard-2.5c16b60eb787ef6aa453.png",
-    "static/media/work-day-planer-webpage.png": "./static/media/work-day-planer-webpage.19d53750a4a8fdc151a8.png",
-    "static/media/about-picture.jpeg": "./static/media/about-picture.a9c0f45f12fa366a23c0.jpeg",
-    "static/media/password-generator-screenshot.png": "./static/media/password-generator-screenshot.fdaac8a9a7390df4e205.png",
-    "static/media/get-a-book.png": "./static/media/get-a-book.b1c49e5ddf9160ada441.png",
-    "static/media/note-taker.png": "./static/media/note-taker.56f4da67cdfa6f33227a.png",
-    "index.html": "./index.html",
-    "main.a9f09c08.css.map": "./static/css/main.a9f09c08.css.map",
-    "main.fc907d33.js.map": "./static/js/main.fc907d33.js.map",
-    "787.3cf146a8.chunk.js.map": "./static/js/787.3cf146a8.chunk.js.map"
+    "main.css": "/react-portifolio/static/css/main.a9f09c08.css",
+    "main.js": "/react-portifolio/static/js/main.84a1f11f.js",
+    "static/js/787.3cf146a8.chunk.js": "/react-portifolio/static/js/787.3cf146a8.chunk.js",
+    "static/media/foodtopia.png": "/react-portifolio/static/media/foodtopia.95992fa4614ad7dd5991.png",
+    "static/media/fitness-app.png": "/react-portifolio/static/media/fitness-app.a422e367c7a0667518e9.png",
+    "static/media/tech-blog-home.png": "/react-portifolio/static/media/tech-blog-home.526e3fe7bc1e6c13e796.png",
+    "static/media/screenshot-quiz-main.png": "/react-portifolio/static/media/screenshot-quiz-main.020ebcd2c64dc66c94cb.png",
+    "static/media/Portrait1.png": "/react-portifolio/static/media/Portrait1.e6c1f26ecee08242c2bc.png",
+    "static/media/schoolify.png": "/react-portifolio/static/media/schoolify.8673b9ae9856ce68ee35.png",
+    "static/media/weather-dashboard-2.png": "/react-portifolio/static/media/weather-dashboard-2.5c16b60eb787ef6aa453.png",
+    "static/media/work-day-planer-webpage.png": "/react-portifolio/static/media/work-day-planer-webpage.19d53750a4a8fdc151a8.png",
+    "static/media/about-picture.jpeg": "/react-portifolio/static/media/about-picture.a9c0f45f12fa366a23c0.jpeg",
+    "static/media/password-generator-screenshot.png": "/react-portifolio/static/media/password-generator-screenshot.fdaac8a9a7390df4e205.png",
+    "static/media/get-a-book.png": "/react-portifolio/static/media/get-a-book.b1c49e5ddf9160ada441.png",
+    "static/media/note-taker.png": "/react-portifolio/static/media/note-taker.56f4da67cdfa6f33227a.png",
+    "index.html": "/react-portifolio/index.html",
+    "main.a9f09c08.css.map": "/react-portifolio/static/css/main.a9f09c08.css.map",
+    "main.84a1f11f.js.map": "/react-portifolio/static/js/main.84a1f11f.js.map",
+    "787.3cf146a8.chunk.js.map": "/react-portifolio/static/js/787.3cf146a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9f09c08.css",
-    "static/js/main.fc907d33.js"
+    "static/js/main.84a1f11f.js"
   ]
 }

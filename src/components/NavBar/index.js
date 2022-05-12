@@ -15,7 +15,6 @@ import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
-import Link from "@mui/material/Link";
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import AssignmentInd from "@mui/icons-material/AssignmentInd";
 import Home from "@mui/icons-material/Home";
@@ -24,7 +23,7 @@ import ContactMail from "@mui/icons-material/ContactMail";
 import Computer from "@mui/icons-material/Computer";
 import portrait from "../../assets/img/Portrait1.png";
 import { NavbarFooter } from "../NavbarFooter";
-import { Button } from "@mui/material";
+import Button from "@mui/material/Button";
 
 const theme = createTheme();
 
@@ -45,19 +44,19 @@ const menuItems = [
     id: "3",
     listIcon: <Computer />,
     listText: "Skills",
-    listPath: "/react-portifolio/skills",
+    listPath: "/skills",
   },
   {
     id: "4",
     listIcon: <Apps />,
     listText: "Portifolio",
-    listPath: "/react-portifolio/portifolio",
+    listPath: "/portifolio",
   },
   {
     id: "5",
     listIcon: <ContactMail />,
     listText: "Contact",
-    listPath: "/react-portifolio/contact",
+    listPath: "/contact",
   },
 ];
 

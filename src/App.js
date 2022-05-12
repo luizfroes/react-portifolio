@@ -33,7 +33,7 @@ export const App = (props) => {
           component={<Portifolio />}
         ></Route>
         <Route
-          exact={true}
+          // exact={true}
           path="/react-portifolio"
           component={<Home />}
         ></Route>

@@ -44,19 +44,19 @@ const menuItems = [
     id: "3",
     listIcon: <Computer />,
     listText: "Skills",
-    listPath: "/skills",
+    listPath: "/react-portifolio/skills",
   },
   {
     id: "4",
     listIcon: <Apps />,
     listText: "Portifolio",
-    listPath: "/portifolio",
+    listPath: "/react-portifolio/portifolio",
   },
   {
     id: "5",
     listIcon: <ContactMail />,
     listText: "Contact",
-    listPath: "/contact",
+    listPath: "/react-portifolio/contact",
   },
 ];
 

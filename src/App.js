@@ -15,22 +15,22 @@ export const App = (props) => {
         <Route
           exact={true}
           path="/react-portifolio/about"
-          component={<About />}
+          element={<About />}
         ></Route>
         <Route
           exact={true}
           path="/react-portifolio/skills"
-          component={<Skills />}
+          element={<Skills />}
         ></Route>
         <Route
           exact={true}
           path="/react-portifolio/contact"
-          component={<Contact />}
+          element={<Contact />}
         ></Route>
         <Route
           exact={true}
           path="/react-portifolio/portifolio"
-          component={<Portifolio />}
+          element={<Portifolio />}
         ></Route>
         <Route exact={true} path="/react-portifolio" element={<Home />}></Route>
       </Routes>

@@ -13,26 +13,30 @@ export const App = (props) => {
       <NavBar />
       <Routes>
         <Route
-          exact={true}
+          // exact={true}
           path="/react-portifolio/about"
-          element={<About />}
+          component={<About />}
         ></Route>
         <Route
-          exact={true}
+          // exact={true}
           path="/react-portifolio/skills"
-          element={<Skills />}
+          component={<Skills />}
         ></Route>
         <Route
-          exact={true}
+          // exact={true}
           path="/react-portifolio/contact"
-          element={<Contact />}
+          component={<Contact />}
         ></Route>
         <Route
-          exact={true}
+          // exact={true}
           path="/react-portifolio/portifolio"
-          element={<Portifolio />}
+          component={<Portifolio />}
         ></Route>
-        <Route exact={true} path="/react-portifolio" element={<Home />}></Route>
+        <Route
+          // exact={true}
+          path="/react-portifolio"
+          component={<Home />}
+        ></Route>
       </Routes>
     </>
   );

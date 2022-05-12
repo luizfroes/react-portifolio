@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a9f09c08.css",
-    "main.js": "./static/js/main.4a84286f.js",
+    "main.js": "./static/js/main.9b477656.js",
     "static/js/787.3cf146a8.chunk.js": "./static/js/787.3cf146a8.chunk.js",
     "static/media/foodtopia.png": "./static/media/foodtopia.95992fa4614ad7dd5991.png",
     "static/media/fitness-app.png": "./static/media/fitness-app.a422e367c7a0667518e9.png",
@@ -17,11 +17,11 @@
     "static/media/note-taker.png": "./static/media/note-taker.56f4da67cdfa6f33227a.png",
     "index.html": "./index.html",
     "main.a9f09c08.css.map": "./static/css/main.a9f09c08.css.map",
-    "main.4a84286f.js.map": "./static/js/main.4a84286f.js.map",
+    "main.9b477656.js.map": "./static/js/main.9b477656.js.map",
     "787.3cf146a8.chunk.js.map": "./static/js/787.3cf146a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9f09c08.css",
-    "static/js/main.4a84286f.js"
+    "static/js/main.9b477656.js"
   ]
 }

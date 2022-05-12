@@ -12,7 +12,11 @@ export const App = (props) => {
     <>
       <NavBar />
       <Routes>
-        <Route exact={true} path="/about" element={<About />}></Route>
+        <Route
+          exact={true}
+          path="/react-portifolio/about"
+          element={<About />}
+        ></Route>
         <Route
           exact={true}
           path="/react-portifolio/skills"

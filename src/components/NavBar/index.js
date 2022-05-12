@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { createTheme } from "@mui/material/styles";
 import "../../style.css";
 import MobilRightMenuSlider from "@mui/material/Drawer";
@@ -23,6 +24,7 @@ import ContactMail from "@mui/icons-material/ContactMail";
 import Computer from "@mui/icons-material/Computer";
 import portrait from "../../assets/img/Portrait1.png";
 import { NavbarFooter } from "../NavbarFooter";
+import { Button } from "@mui/material";
 
 const theme = createTheme();
 
@@ -64,6 +66,8 @@ export const NavBar = () => {
     right: false,
   });
 
+  const navigate = useNavigate();
+
   const toggleSlider = (slider, open) => () => {
     setSliderState({ ...sliderState, [slider]: open });
   };
@@ -103,8 +107,10 @@ export const NavBar = () => {
           <ListItem
             button
             key={listItem.id}
-            component={Link}
-            href={listItem.listPath}
+            component={Button}
+            onClick={() => {
+              navigate(listItem.listPath, { replace: true });
+            }}
             sx={{
               "&:hover": {
                 backgroundColor: "#0466c8ff",

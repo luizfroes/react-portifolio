@@ -50,7 +50,7 @@ const menuItems = [
     id: "4",
     listIcon: <Apps />,
     listText: "Portifolio",
-    listPath: "/react-portifolio/portifolio",
+    listPath: "/portifolio",
   },
   {
     id: "5",

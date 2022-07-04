@@ -26,7 +26,7 @@ export const ProjectCard = ({ project }) => {
     "@media (min-width: 1200px)": {
       height: "48vh",
     },
-    transform: "scale(1.3)",
+    transform: "scale(0.8)",
     transition: "all 0.3s ease-out",
   }));
 

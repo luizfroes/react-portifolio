@@ -16,7 +16,12 @@ export const ContactPage = () => {
       disableGutters="true"
       maxWidth={false}
       component="section"
-      sx={{ width: "auto", justifyContent: "center" }}
+      sx={{
+        width: "auto",
+        display: "flex",
+        justifyContent: "center",
+        flexWrap: "wrap",
+      }}
     >
       <Button
         sx={{

@@ -11,6 +11,11 @@ import noteTaker from "../assets/img/note-taker.png";
 import planner from "../assets/img/work-day-planer-webpage.png";
 import schoolify from "../assets/img/schoolify.png";
 import techBlog from "../assets/img/tech-blog-home.png";
+import ecommerce from "../assets/img/ecommerce.png";
+import employee from "../assets/img/employee-tracker.jpg";
+import social from "../assets/img/social-network.jpg";
+import readme from "../assets/img/readme-generator.jpg";
+import team from "../assets/img/team-profile-generator.png";
 
 export const projects = {
   frontEndProjects: [
@@ -66,7 +71,7 @@ export const projects = {
       title: "NoSQL Social Network API",
       description:
         "NoSQL Social Network API is social network backend web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
-      image: foodtopia,
+      image: social,
       gitHubUrl:
         "https://github.com/luizfroes/NoSQL-Social-Network-API/tree/dev",
     },
@@ -75,7 +80,7 @@ export const projects = {
       title: "Employee Tracker",
       description:
         "Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called content management systems (CMS). That is exactly what Employee Tracker does. It a command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL.",
-      image: foodtopia,
+      image: employee,
       gitHubUrl: "https://github.com/luizfroes/employee-tracker/tree/dev",
       webUrl: "",
     },
@@ -84,7 +89,7 @@ export const projects = {
       title: "E-Commerce-Backend",
       description:
         "Internet retail, also known as e-commerce, is the largest sector of the electronics industry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. This application is the back end for an e-commerce site that has a Express.js sever and use Sequelize to interact with a MySQL database.",
-      image: foodtopia,
+      image: ecommerce,
       gitHubUrl: "https://github.com/luizfroes/ecomerce-backend/tree/dev",
     },
     {
@@ -92,7 +97,7 @@ export const projects = {
       title: "Team Profile Generator",
       description:
         "Team Profile Generator is a Node.js command-line application that takes information about employees on a software engineering team, then generates a flat and responsive HTML webpage that displays summaries for each person. There's also some tests using Jest.js.",
-      image: foodtopia,
+      image: team,
       gitHubUrl: "https://github.com/luizfroes/team-profile-generator/tree/dev",
     },
     {
@@ -100,7 +105,7 @@ export const projects = {
       title: "Readme Generator",
       description:
         "Readme Generator. An application that get user inputs and generate a professional README.md file. With Readme Generator you can quickly and easily create a README file by using a command-line application to generate one. Saving your time, you to devote more time to working on your projects.",
-      image: foodtopia,
+      image: readme,
       gitHubUrl: "https://github.com/luizfroes/readme-generator/tree/dev",
     },
   ],

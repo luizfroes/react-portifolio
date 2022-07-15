@@ -25,8 +25,8 @@ export const projects = {
       description:
         "Foodtopia is a responsive and dynamic recipe app, which assists users with advanced dietary needs. This app also provides an advanced mathematical calculator to present quantity of ingredients for catering services and to cater for larger parties.",
       image: foodtopia,
-      gitHubUrl: "https://github.com/luizfroes/password-generate",
-      webUrl: "https://luizfroes.github.io/password-generate/",
+      gitHubUrl: "https://github.com/luizfroes/foodtopia-1",
+      webUrl: "https://luizfroes.github.io/foodtopia-1/",
     },
     {
       id: "2",
@@ -34,8 +34,8 @@ export const projects = {
       description:
         "An application that enables employees to generate random passwords based on criteria that they’ve selected.",
       image: password,
-      gitHubUrl: "https://github.com/luizfroes/foodtopia-1",
-      webUrl: "https://luizfroes.github.io/foodtopia-1/",
+      gitHubUrl: "https://github.com/luizfroes/password-generate",
+      webUrl: "https://luizfroes.github.io/password-generate/",
     },
     {
       id: "3",
